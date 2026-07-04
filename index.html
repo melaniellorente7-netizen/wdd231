@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Course Home Page Assignment for my Week 01 of WDD 231 class">
+    <meta name="author" content="Melanie Llorente">
+    <title>Course Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
 </head>
+
 <body>
-    
+    <div class="logo-header">
+        <header>
+            <img src="images/flower1.svg" alt="Site Logo" width="512" height="512">
+            <span>Melanie Llorente</span>
+            <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+                aria-controls="nav-bar"></button>
+        </header>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="https://byui-cse.github.io/wdd231-ww-course/week02/">Chamber</a></li>
+                <li><a href="https://byui-cse.github.io/wdd231-ww-course/week06/project-description.html">Final</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <h1>Home</h1>
+            <div class="student-info-grid">
+                <section class="card about-me">
+                    <h2>About Me</h2>
+                    <p>Hi! My name is Melanie! <br> I'm 28 years old and I live in Montevideo, Uruguay.<br> I'm married
+                        and have a 6 years old son call Bruno!</p>
+                </section>
+                <section class="card student-photo">
+                    <h2>Student Photo</h2>
+                    <img src="images/profile.jpg" alt="Student Profile Picture">
+                </section>
+            </div>
+            <section class="card courses-card">
+                <h2>Web Certificate Courses</h2>
+                <div class="filter-buttons">
+                    <button id="btn-all" class="btn active">All</button>
+                    <button id="btn-cse" class="btn">CSE</button>
+                    <button id="btn-wdd" class="btn">WDD</button>
+                </div>
+                <div id="course-container"></div>
+                <p id="total-credits"></p>
+            </section>
+        </main>
+        <footer>
+            <div class="social">
+                <a href="https://github.com/melaniellorente7-netizen" target="_blank"><img src="images/github.svg"
+                        alt="microsoft teams" width="16" height="16"></a>
+                <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="16" height="16"></a>
+                <a href="https://www.x.com" target="_blank"><img src="images/twitter-x.svg" alt="twitter" width="16"
+                        height="16"></a>
+            </div>
+            <p>©<span id="currentyear"></span> Melanie Llorente - Uruguay</p>
+            <p id="lastModified"></p>
+        </footer>
+
 </body>
+
 </html>

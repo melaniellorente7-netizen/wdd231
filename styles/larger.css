@@ -1,0 +1,61 @@
+@media only screen and (min-width: 38rem) {
+   
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+    
+    .navigation a {
+        border: none;
+    }
+
+    .student-info-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        align-items: start;
+    }
+
+
+    #course-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .course-card {
+        flex: 1 1 calc(33.333% - 10px); 
+        min-width: 120px;
+    }
+
+    .course {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .card h2 {
+        text-align: center;
+    }
+
+    .student-photo img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+       border-radius: 4px;
+    }
+    
+}
