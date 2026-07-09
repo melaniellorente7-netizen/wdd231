@@ -1,0 +1,31 @@
+{
+    "members": {
+        "family_name": "Llorente",
+        "moved_in_date": "2018-04-12",
+        "number_of_people": 4,
+        "visited_by_bishopric": true,
+        "family_members": [
+            {
+                "name": "Pedro Santos",
+                "gender": "Female",
+                "birthdate": "1992-08-20"
+            },
+            {
+                "name": "Maria Santos",
+                "gender": "Female",
+                "birthdate": "1992-08-20"
+            },
+            {
+                "name": "Andrea Santos",
+                "gender": "Female",
+                "birthdate": "2010-03-05"
+            },
+            {
+                "name": "Luz Santos",
+                "gender": "Male",
+                "birthdate": "2012-11-10"
+            }
+        ]
+    }
+
+}

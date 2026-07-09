@@ -76,7 +76,7 @@ header span {
     background-color: #eee;
 }
 .navigation a:hover {
-    background-color: #E07A5F;
+    background-color: #864432;
 }
 
 h1 {
@@ -195,9 +195,9 @@ main {
 }
 
 .course-card.completed {
-    background-color: #E07A5F;
+    background-color: #864432;
     color: white;
-    border-color: #E07A5F;
+    border-color: #864432;
 }
 
 .course-card.incomplete {

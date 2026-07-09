@@ -1,0 +1,85 @@
+/* see auto column grid in CSS in the .grid class rule */
+
+body {
+	font-family: Roboto, sans-serif;
+}
+
+header {
+   background-color: #4a1f2b;
+   color: #f0e6d2;
+   margin: 0;
+   padding: 20px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	margin: 1rem 0;
+	text-shadow: 0 0 30px #111;
+}
+
+
+p {
+	margin: 0;
+}
+
+.grid {
+	display: grid;
+	grid-gap: 0.5rem;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+section {
+	margin: 0.5rem;
+	padding: 0.5rem;
+	background-color: #f5f0e6;
+	border-color: #c9a86a;
+	border: 1px solid rgb(0 0 0 / 10%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+section > p {
+	min-height: 20px;
+	font-size: smaller;
+	text-align: center;
+    padding: 4px;
+}
+
+img {
+	width: auto;
+	max-width: 325px;
+	box-shadow: 0 0 30px #777;
+	height: 200px;
+	border: 1px solid #111;
+    padding: 10px;
+}
+
+.birth-date {
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 0.25rem;
+}
+
+.birth-place {
+	font-style: normal;
+    font-weight: bold;
+	color: #333;
+}
+
+
+footer {
+    background-color: #4a1f2b;
+    color: #f0e6d2;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+
+
+
+
