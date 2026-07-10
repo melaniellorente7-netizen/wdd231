@@ -1,0 +1,36 @@
+@media only screen and (min-width: 768px) {
+   
+
+    header {
+        grid-template-columns: 60px 1fr 1fr auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        width: auto;
+        border-bottom: transparent;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation li {
+        margin-left: 1rem;
+    }
+    
+    .navigation a {
+        padding: .5rem .8rem;
+        border-bottom: none;
+    }
+
+    .navigation li.current {
+        background-color: transparent;
+        text-decoration: underline;
+    }
+}
