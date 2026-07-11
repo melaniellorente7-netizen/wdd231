@@ -1,0 +1,95 @@
+{
+    "members":[
+  {
+    "companyName": "Lolita - Minas Shopping",
+    "companyAddress": "Luis Alberto de Herrera 950 - Local 21, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 4443 2689",
+    "companyWebsiteUrl": "https://lolita.com.uy/",
+    "companyEmail": "atencionalcliente@lolitavirtual.com",
+    "imageFileName": "lolita.png",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "businessType": "Clothing & Fashion",
+      "openingHours": "Monday to Sunday, 10:00 to 22:00"
+    }
+  },
+  {
+    "companyName": "Tienda Aiub",
+    "companyAddress": "Jose Batlle y Ordoñez 750, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 4442 2110",
+    "companyWebsiteUrl": "https://www.facebook.com/TiendaAiub/",
+    "companyEmail": "tiendaaiubminas@gmail.com",
+    "imageFileName": "tiendaaiub.png",
+    "membershipLevel": 2,
+    "otherInformation": {
+      "businessType": "Apparel, Shoes & Fashion",
+      "googleRating": 4.3
+    }
+  },
+  {
+    "companyName": "Minas Importaciones",
+    "companyAddress": "18 de Julio 631, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 4442 1135",
+    "companyWebsiteUrl": "https://www.minasimportaciones.com.uy/",
+    "companyEmail": "minasimportaciones@gmail.com",
+    "imageFileName": "minasimportaciones.jpg",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "businessType": "Bazar & Electronics Store",
+      "whatsappContact": "+598 92 760 468"
+    }
+  },
+  {
+    "companyName": "Panadería y Confitería Tu Deleit",
+    "companyAddress": "Esc. Héctor Leis esquina, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 4444 6828",
+    "companyWebsiteUrl": "https://laguiauruguay.com.uy/listado-empresas/lavalleja/",
+    "companyEmail": "tudeleit@gmail.com",
+    "imageFileName": "bakery.jpg",
+    "membershipLevel": 1,
+    "otherInformation": {
+      "businessType": "Bakery & Pastry Shop",
+      "specialty": "Artisanal breads and traditional Uruguayan pastries"
+    }
+  },
+  {
+    "companyName": "Punto Minas",
+    "companyAddress": "Ruta 8, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 91 500 711",
+    "companyWebsiteUrl": "https://puntominas.uy/",
+    "companyEmail": "contacto@puntominas.uy",
+    "imageFileName": "puntominas.png",
+    "membershipLevel": 3,
+    "otherInformation": {
+      "businessType": "Commercial Shopping Center",
+      "openingHours": "Monday to Saturday 08:00 to 22:00, Sundays 09:00 to 22:00"
+    }
+  },
+  {
+    "companyName": "Indian Minas",
+    "companyAddress": "25 de Mayo 540 Esquina 18 de Julio, 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 2400 9236",
+    "companyWebsiteUrl": "https://www.indian.com.uy/",
+    "companyEmail": "info@indian.com.uy",
+    "imageFileName": "indian.png",
+    "membershipLevel": 2,
+    "otherInformation": {
+      "businessType": "Women & Men Clothing",
+      "storeExtension": "Int 523"
+    }
+  },
+  {
+    "companyName": "Pizzería Porky's",
+    "companyAddress": "Sarandí (JQF6+P49), 30000 Minas, Lavalleja, Uruguay",
+    "companyPhoneNumber": "+598 4442 6924",
+    "companyWebsiteUrl": "https://laguiauruguay.com.uy/listado-empresas/lavalleja/",
+    "companyEmail": "pizzeriaporkys@gmail.com",
+    "imageFileName": "pizzeria.jpg",
+    "membershipLevel": 1,
+    "otherInformation": {
+      "businessType": "Restaurant / Pizzeria",
+      "deliveryAvailable": true
+    }
+  }
+]
+}

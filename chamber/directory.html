@@ -10,15 +10,17 @@
     <meta property="og:description"
         content="Discover the amazing businesses and oportunities to grow your business in Minas City!">
     <meta property="og:image" content="">
-    <meta property="og:url" content="">
+    <meta property="og:url" content="https://melaniellorente7-netizen.github.io/wdd231/chamber/directory.html">
     <title>Chamber Directory Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/smaller.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/list.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
 
 </head>
 
@@ -41,11 +43,39 @@
         </nav>
     </header>
 
-
-    <main></main>
+    <main>
+        <h1>Directory</h1>
+        <div class="buttons">
+        <button id="grid" class="active">Grid</button>
+        <button id="list">List</button>
+    </div>
+        <div id="cards" class="grid"></div>
+    </main>
     <footer>
-        <p>©<span id="currentyear"></span> Melanie Llorente - Uruguay</p>
+        <div class="footer-left">
+        <p><strong>Minas Chamber of Commerce</strong></p>
+        <p>Rafael Perez del Puerto 515</p>
+        <p>Minas, Uruguay</p>
+        <p>info@minas.org</p>
+        <p>(223) 555-2300</p>
+    </div>
+    <div class="footer-center">
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+            <img src="images/youtube-icon.svg" alt="YouTube Icon">
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <img src="images/twitter-icon.svg" alt="Twitter Icon">
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+            <img src="images/linkedin-icon.svg" alt="LinkedIn Icon">
+        </a>
+    </div>
+    <div class="footer-right">
+        <p>WDD231 Class Project</p>
+        <p>Melanie Llorente</p>
+        <p>©<span id="currentyear"></span> Minas Chamber of Commerce</p>
         <p id="lastModified"></p>
+    </div>
     </footer>
 
 </body>
