@@ -289,3 +289,29 @@ footer {
 footer p {
     margin: 5px 0;
 }
+
+/*WEATHER CARD*/
+
+.weather-card {
+    border: 1px solid #5e6f67;
+    background-color: #f6f0da;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.weather-card h2 {
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+.weather-card #description {
+    text-transform: capitalize;
+    color: #3a5250;
+    margin: .3rem 0;
+}
+
+.weather-card #temperature {
+    font-size: 2rem;
+    color: #537279;
+    margin: .3rem 0;
+}
