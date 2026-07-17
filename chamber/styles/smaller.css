@@ -351,6 +351,7 @@ footer {
     width: 22px;
     height: 22px;
     filter: none;
+    padding: 0;
 }
 
 .footer-center a {
