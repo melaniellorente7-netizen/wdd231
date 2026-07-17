@@ -144,5 +144,39 @@
         text-decoration: underline;
     }
 
+    .hero-container {
+        padding: 0;
+    }
+
+    .hero-container .banner {
+        border-radius: 0;
+        height: 450px;
+    }
+
+    .join-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 2;
+    }
+
+    .weather-card {
+        position: absolute;
+        top: 50%;
+        right: 10%;
+        transform: translateY(-50%);
+        width: 280px;
+        z-index: 2;
+    }
+
+    .events-grid{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .event-item {
+        flex: 1;
+    }
+
 
 }

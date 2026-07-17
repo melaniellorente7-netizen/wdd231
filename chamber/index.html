@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/list.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
     <script src="scripts/weather.js" defer></script>
 
 
@@ -48,20 +48,45 @@
 
     <main>
         <h1>Home</h1>
-        <img class="banner" src="">
-         <div class="weather-card">
-      <h2 id="town"></h2>
-      <img id="graphic" src="" alt="">
-      <p id="description"></p>
-      <p id="temperature"></p>
-    </div>
+        <div class="hero-container">
+            <img class="banner" src="images/minas-banner.webp" alt="Minas Cityscape Banner">
+            <a href="join.html" class="join-btn">Join Us!</a>
+            <div class="weather-card">
+                <h2 id="town"></h2>
+                <img id="graphic" src="" alt="">
+                <p id="description"></p>
+                <p id="temperature"></p>
+                <div id="forecast" class="forecast-grid"></div>
+            </div>
+        </div>
+
+        <section class="events-section">
+            <h2>Current Events</h2>
+            <div class="events-grid">
+                <div class="event-item">
+                    <h3>Semana de Lavalleja</h3>
+                    <p><strong>Place:</strong> Parque Rodó, Minas</p>
+                    <p><strong>Activity:</strong> Live performances, artisanal markets, and a traditional food court.</p>
+                </div>
+                <div class="event-item">
+                    <h3>Arequita Trail Run</h3>
+                    <p><strong>Place:</strong> Arequita Hill</p>
+                    <p><strong>Activity:</strong> Adventure racing and hiking through the natural landscapes of Minas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlight-section">
+            <h2>Business Spotlights</h2>
+            <div id="cards" class="grid"></div>
+        </section>
     </main>
     <footer>
         <div class="footer-left">
         <p><strong>Minas Chamber of Commerce</strong></p>
         <p>Rafael Perez del Puerto 515</p>
         <p>Minas, Uruguay</p>
-        <p>info@minas.org</p>
+        <p><a href="mailto:info@minas.org">info@minas.org</a></p>
         <p>(223) 555-2300</p>
     </div>
     <div class="footer-center">
