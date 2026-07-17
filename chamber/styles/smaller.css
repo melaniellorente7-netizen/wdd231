@@ -474,12 +474,6 @@ footer a:hover {
     box-shadow: 0 6px 14px rgba(0,0,0,0.12);
 }
 
-.card-header {
-    border-bottom: 1px solid #e6d9bc;
-    padding-bottom: 12px;
-    margin-bottom: 12px;
-}
-
 .forecast-grid {
     display: flex;
     justify-content: space-between;
