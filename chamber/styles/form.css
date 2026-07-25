@@ -7,89 +7,87 @@ html {
     -ms-text-size-adjust: 100%;
 }
 
-h1 {
-    color: #4a1f2b;
-}
 
 form {
     margin: 1rem 2%;
-
-    label {
-        display: block;
-        font-size: .8rem;
-        color: #4a1f2b;
-        font-weight: 600;
-        padding-top: .2rem;
-    }
-
-    h3 {
-        font-size: .9rem;
-        color: #864432;
-        margin: 1.5rem 0 .2rem 0;
-        border-bottom: 1px solid #c9a86a;
-    }
-
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select,
-    textarea {
-        display: block;
-        margin: .1rem 0 1rem 0;
-        padding: .3rem;
-        border: 1px solid #999;
-        border-radius: 4px;
-        border-left-width: 5px;
-        border-left-color: #c9a86a;
-        font-size: 1rem;
-        color: #4a1f2b;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    textarea {
-        min-height: 90px;
-        font-family: inherit;
-        resize: vertical;
-    }
-
-    input:required {
-        border-left-color: #d70000;
-    }
-
-    input:focus {
-        border-left-color: #4a1f2b;
-        outline: none;
-    }
-
-    input:required:valid {
-        border-left-color: green;
-    }
-
-    input[type=submit] {
-        border: 2px solid #4a1f2b;
-        text-align: center;
-        background-color: #4a1f2b;
-        color: #f0e6d2;
-        border-radius: 6px;
-        padding: .75rem 1.5rem;
-        margin: 2rem 0;
-        font-size: 1.2rem;
-        font-weight: bold;
-        cursor: pointer;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        -webkit-appearance: none;
-        appearance: none;
-    }
-
-    input[type=submit]:hover {
-        background-color: #864432;
-        border-color: #864432;
-        transform: translateY(-2px);
-    }
 }
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: #4a1f2b;
+    font-weight: 600;
+    padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    color: #864432;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #c9a86a;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #c9a86a;
+    font-size: 1rem;
+    color: #4a1f2b;
+    width: 100%;
+    max-width: 400px;
+}
+
+form textarea {
+    min-height: 90px;
+    font-family: inherit;
+    resize: vertical;
+}
+
+form input:required {
+    border-left-color: #d70000;
+}
+
+form input:focus {
+    border-left-color: #4a1f2b;
+    outline: none;
+}
+
+form input:required:valid {
+    border-left-color: green;
+}
+
+form input[type=submit] {
+    border: 2px solid #4a1f2b;
+    text-align: center;
+    background-color: #4a1f2b;
+    color: #f0e6d2;
+    border-radius: 6px;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+form input[type=submit]:hover {
+    background-color: #864432;
+    border-color: #864432;
+    transform: translateY(-2px);
+}
+
 
 input:-webkit-autofill {
     -webkit-text-fill-color: #4a1f2b;
@@ -157,29 +155,15 @@ input:-webkit-autofill {
 }
 
 
-.card-np {
-    animation-delay: 0.1s;
-}
-
-.card-bronze {
-    animation-delay: 0.2s;
-}
-
-.card-silver {
-    animation-delay: 0.3s;
-}
-
-.card-gold {
-    animation-delay: 0.4s;
-}
 
 .card-np {
     background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    border: 2px solid #056629;
+    border: 2px solid #033e19;
+     animation-delay: 0.1s;
 }
 
 .card-np .open-modal {
-    background-color: #056629;
+    background-color: #04471c;
     color: #ffffff;
 }
 
@@ -194,7 +178,8 @@ input:-webkit-autofill {
 
 .card-bronze {
     background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
-    border: 2px solid #874912;
+    border: 2px solid #6a380d;
+     animation-delay: 0.2s;
 }
 
 .card-bronze h3 {
@@ -212,7 +197,8 @@ input:-webkit-autofill {
 
 .card-silver {
     background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-    border: 2px solid #434f60;
+    border: 2px solid #384250;
+    animation-delay: 0.3s;
 }
 
 .card-silver h3 {
@@ -230,7 +216,8 @@ input:-webkit-autofill {
 
 .card-gold {
     background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
-    border: 2px solid #d97706;
+    border: 2px solid #ca6e05;
+    animation-delay: 0.4s;
 }
 
 .card-gold h3 {
@@ -309,7 +296,7 @@ section.membership-cards {
 }
 
 .membership-cards .card {
-    background-color: #f6f0da;
+    background-color: #f8f3e2;
     border: 1px solid #c9a86a;
     border-radius: 12px;
     padding: 1.5rem;
