@@ -1,0 +1,318 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+h1 {
+    color: #4a1f2b;
+}
+
+form {
+    margin: 1rem 2%;
+
+    label {
+        display: block;
+        font-size: .8rem;
+        color: #4a1f2b;
+        font-weight: 600;
+        padding-top: .2rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+        color: #864432;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #c9a86a;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select,
+    textarea {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #c9a86a;
+        font-size: 1rem;
+        color: #4a1f2b;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    textarea {
+        min-height: 90px;
+        font-family: inherit;
+        resize: vertical;
+    }
+
+    input:required {
+        border-left-color: #d70000;
+    }
+
+    input:focus {
+        border-left-color: #4a1f2b;
+        outline: none;
+    }
+
+    input:required:valid {
+        border-left-color: green;
+    }
+
+    input[type=submit] {
+        border: 2px solid #4a1f2b;
+        text-align: center;
+        background-color: #4a1f2b;
+        color: #f0e6d2;
+        border-radius: 6px;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    input[type=submit]:hover {
+        background-color: #864432;
+        border-color: #864432;
+        transform: translateY(-2px);
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #4a1f2b;
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 1.5rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+#results h2 {
+    margin-top: 0;
+    color: #4a1f2b;
+}
+
+#results p {
+    margin: 0 0 .9rem 0;
+    line-height: 1.4;
+}
+
+#results p:last-child {
+    margin-bottom: 0;
+}
+
+.thanks-main {
+    padding: 1.5rem 1.25rem 2.5rem;
+}
+
+.thanks-main h1 {
+    margin: 0 0 1rem 0;
+}
+
+.thanks-main>p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card {
+    background-color: #f5f0e6;
+    border: 2px solid #c9a86a;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+.card-np {
+    animation-delay: 0.1s;
+}
+
+.card-bronze {
+    animation-delay: 0.2s;
+}
+
+.card-silver {
+    animation-delay: 0.3s;
+}
+
+.card-gold {
+    animation-delay: 0.4s;
+}
+
+.card-np {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 2px solid #056629;
+}
+
+.card-np .open-modal {
+    background-color: #056629;
+    color: #ffffff;
+}
+
+.card-np .open-modal:hover {
+    background-color: #056629;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #4a1f2b;
+}
+
+.card-bronze {
+    background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+    border: 2px solid #874912;
+}
+
+.card-bronze h3 {
+    color: #874912;
+}
+
+.card-bronze .open-modal {
+    background-color: #874912;
+    color: #ffffff;
+}
+
+.card-bronze .open-modal:hover {
+    background-color: #874912;
+}
+
+.card-silver {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 2px solid #434f60;
+}
+
+.card-silver h3 {
+    color: #434f60;
+}
+
+.card-silver .open-modal {
+    background-color: #434f60;
+    color: #ffffff;
+}
+
+.card-silver .open-modal:hover {
+    background-color: #434f60;
+}
+
+.card-gold {
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
+    border: 2px solid #d97706;
+}
+
+.card-gold h3 {
+    color: #b45309;
+}
+
+.card-gold .open-modal {
+    background-color: #6c3c04;
+    color: #ffffff;
+}
+
+.card-gold .open-modal:hover {
+    background-color: #b45309;
+}
+
+.open-modal {
+    background-color: #4a1f2b;
+    color: #f0e6d2;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.open-modal:hover {
+    background-color: #864432;
+}
+
+
+dialog {
+    border: 1px solid #4a1f2b;
+    border-radius: 8px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+    padding: 20px;
+    position: relative;
+    background-color: #fefefe;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+
+form.designOne {
+    width: 100%;
+}
+
+.membership-levels-column {
+    width: 100%;
+}
+
+section.membership-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
+    background-color: transparent;
+    padding: 0;
+}
+
+.membership-cards .card {
+    background-color: #f6f0da;
+    border: 1px solid #c9a86a;
+    border-radius: 12px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}

@@ -79,6 +79,7 @@ const courses = [
 ]
 const container = document.getElementById('course-container');
 const totalCreditsEl = document.getElementById('total-credits');
+const courseDetails = document.querySelector('#course-details');
 
 function displayCourses(filteredCourses) {
     container.innerHTML = "";
@@ -87,11 +88,48 @@ function displayCourses(filteredCourses) {
         const card = document.createElement('div');
         card.className = `course-card ${course.completed ? 'completed' : 'incomplete'}`;
         card.innerHTML = `<strong>${course.subject} ${course.number}</strong>`;
+
+        card.addEventListener('click', () => {
+            displayCourseDetails(course);
+        });
+
         container.appendChild(card);
     });
 
     const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
     totalCreditsEl.textContent = `The total credits for courses listed above is ${totalCredits}`;
+}
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    
+    courseDetails.showModal();
+    
+    const closeModal = document.querySelector('#closeModal');
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+
+    courseDetails.addEventListener('click', (event) => {
+    const dialogBounds = courseDetails.getBoundingClientRect();
+    if (
+        event.clientX < dialogBounds.left ||
+        event.clientX > dialogBounds.right ||
+        event.clientY < dialogBounds.top ||
+        event.clientY > dialogBounds.bottom
+    ) {
+        courseDetails.close();
+    }
+});
 }
 document.getElementById('btn-all').addEventListener('click', () => displayCourses(courses));
 document.getElementById('btn-cse').addEventListener('click', () => displayCourses(courses.filter(c => c.subject === 'CSE')));

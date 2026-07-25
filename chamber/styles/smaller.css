@@ -1,19 +1,23 @@
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
+
 /**HEADER**/
 
-html, body {
+html,
+body {
     height: 100%;
 }
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     margin: 0;
 }
+
 header {
     position: relative;
     display: grid;
@@ -54,17 +58,18 @@ header span {
 
 }
 
-.hamburger::before{
+.hamburger::before {
     content: "\2630";
     font-size: 2rem;
 }
+
 .hamburger.show::before {
     content: "\00D7";
 }
 
 /***NAVIGATION**/
 .navigation {
-     display: none;
+    display: none;
     position: absolute;
     top: 100%;
     right: 0;
@@ -97,6 +102,7 @@ header span {
     background-color: #4a1f2b;
     font-weight: 600;
 }
+
 .navigation a:hover {
     background-color: #864432;
 }
@@ -123,6 +129,7 @@ header span {
 h1 {
     margin-left: 20px;
 }
+
 main {
     font-family: "Geomini", sans-serif;
     flex: 1 0 auto;
@@ -161,7 +168,7 @@ main {
     text-decoration: none;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .join-btn:hover {
@@ -169,6 +176,17 @@ main {
     border-color: #864432;
     transform: translateY(-2px);
 }
+
+
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    width: 100%;
+}
+
 .buttons {
     display: flex;
     justify-self: center;
@@ -187,28 +205,28 @@ main {
     border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.buttons button:hover{
+.buttons button:hover {
     background-color: #864432;
     color: #f0e6d2;
     border-color: #864432;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.buttons button.active{
+.buttons button.active {
     background-color: #4a1f2b;
-    color:#f0e6d2;
+    color: #f0e6d2;
     border-color: #4a1f2b;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .grid {
-	display: grid;
-	grid-gap: 0.5rem;
-	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     padding: 1rem;
     background-color: #f0e6d2;
 }
@@ -237,6 +255,7 @@ main {
     gap: 15px;
     align-items: center;
 }
+
 .card-body img {
     width: 100px;
     height: 100px;
@@ -275,47 +294,49 @@ main {
 }
 
 section {
-	margin: 0;
-	padding: 0;
-	background-color: #f5f0e6;
-	border-color: #c9a86a;
-	border: none;
-	display: flex;
-	flex-direction: column;
-	align-items: stretch;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e6;
+    border-color: #c9a86a;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     overflow: hidden;
 }
 
-section > p {
-	min-height: 20px;
-	font-size: smaller;
-	text-align: center;
+section>p {
+    min-height: 20px;
+    font-size: smaller;
+    text-align: center;
     padding: 4px;
 }
 
 img {
-	width: auto;
-	max-width: 100%;
-	height: auto;
+    width: auto;
+    max-width: 100%;
+    height: auto;
     padding: 10px;
 }
 
-.email, .phone, .url {
-	font-weight: bold;
-	color: #333;
-	margin-bottom: 0.25rem;
+.email,
+.phone,
+.url {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.25rem;
 }
 
 .membership-level {
     display: inline-block;
-    margin-top:6px;
+    margin-top: 6px;
     padding: 3px 12px;
     border-radius: 12px;
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.03rem;
     text-transform: uppercase;
-    color:#440013;
+    color: #440013;
 }
 
 .membership-level.level-3 {
@@ -323,10 +344,11 @@ img {
     color: #440013;
 }
 
-.membership-level.level-2{
+.membership-level.level-2 {
     background-color: #c0c0c0;
     color: #440013;
 }
+
 footer {
     background-color: #4a1f2b;
     color: #f0e6d2;
@@ -338,7 +360,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 .footer-center {
@@ -395,7 +417,7 @@ footer a:hover {
     border-radius: 10px;
     text-align: center;
     padding: 15px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .weather-card h2 {
@@ -414,24 +436,27 @@ footer a:hover {
     color: #4a1f2b;
     margin: .3rem 0;
 }
+
 .weather-card #graphic {
     display: block;
-    margin:0 auto;
+    margin: 0 auto;
     width: 70px;
     height: 70px;
     padding: 8px;
     background-color: #5f817e;
     border-radius: 50%;
-    box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.events-section, .spotlight-section {
+.events-section,
+.spotlight-section {
     padding: 20px;
     margin: 15px 0;
     background-color: #f5f0e6;
 }
 
-.events-section h2, .spotlight-section h2 {
+.events-section h2,
+.spotlight-section h2 {
     color: #4a1f2b;
     border-bottom: 2px solid #c9a86a;
     padding-bottom: 5px;
@@ -449,7 +474,7 @@ footer a:hover {
     padding: 15px;
     border-left: 5px solid #864432;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .event-item h3 {
@@ -457,22 +482,22 @@ footer a:hover {
     color: #864432;
 }
 
-.spotlight-section .grid{
+.spotlight-section .grid {
     grid-gap: 1.5rem;
 }
 
-.grid > section {
+.grid>section {
     background-color: #ffffff;
     border-radius: 8px;
     border-left: 5px solid #864432;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     padding: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.grid > section:hover {
+.grid>section:hover {
     transform: translateY(-4px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .forecast-grid {
