@@ -1,0 +1,72 @@
+:root {
+  /* Primario: Azul Océano Profundo */
+  --primary-color: #0F4C81;
+  --primary-text: #FFFFFF;       /* Contraste: 8.5:1 (Pasa AAA) */
+
+  /* Secundario: Arena / Fondo Cálido Neutro */
+  --secondary-bg: #F4F1EA;
+  --secondary-text: #1C2833;     /* Contraste: 14.1:1 (Pasa AAA) */
+  --secondary-border: #B0A8A0;
+
+  /* Acento: Terracota / Naranja Aventura */
+  --accent-color: #C04A21;
+  --accent-text: #FFFFFF;        /* Contraste: 4.8:1 (Pasa AA para texto normal, AAA para grande) */
+}
+body {
+    font-family:"Geomini", sans-serif;
+    background-color: var(--secondary-bg);
+    color: var(--secondary-text);
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: "Geomini", sans-serif;
+    color: var(--primary-color);
+}
+
+header {
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: var(--accent-color);
+    margin-top: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 30px 0;
+}
+
+
+.color-palette {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.color-box {
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+.primary { background-color: var(--primary-color); }
+.secondary { background-color: #E8E5DD; color: #2C2C2C; border: 1px solid #ccc; } 
+.accent { background-color: var(--accent-color); }
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
