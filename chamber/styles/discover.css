@@ -100,7 +100,7 @@ figure {
             "btn";
     }
 
-    .card figure img {
+    figure img {
         width: 100%; 
     }
 }
