@@ -8,10 +8,6 @@ figure {
     margin: 0;
 }
 
-.card figure img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-}
-
 #cards {
     display: grid;
     gap: 1.5rem;
@@ -54,6 +50,7 @@ figure {
     height: 200px;
     object-fit: cover;
     border-radius: 4px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
 }
 
 /* Large Screems */
