@@ -1,0 +1,132 @@
+figure img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+figure {
+    margin: 0;
+}
+
+.card figure img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+#cards {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.card {
+    display: grid;
+    gap: 0.75rem;
+    padding: 1.25rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: #f4f4f4;
+}
+
+.card h2 { grid-area: title; margin: 0; }
+.card figure { grid-area: image; margin: 0; }
+.card p { grid-area: desc; margin: 0; font-size: 1rem;}
+.card address { grid-area: addr; font-style: italic; }
+.card button { 
+    grid-area: btn; 
+    padding: 0.75rem; 
+    background-color: #4a1f2b; 
+    color: #f0e6d2; 
+    border: none; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 1.1rem;
+}
+
+.card button:hover {
+    background-color: #864432;
+    border-color: #864432;
+    transform: translateY(-2px);
+}
+
+.card figure img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Large Screems */
+@media (min-width: 1025px) {
+    #cards {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image addr"
+            "btn   btn";
+    }
+}
+
+/*Medium Screens */
+@media (min-width: 641px) and (max-width: 1024px) {
+    #cards {
+        grid-template-columns: 1fr; 
+    }
+
+    .card {
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "title title"
+            "image desc"
+            "image addr"
+            "btn   btn";
+    }
+}
+
+/* Small Screens */
+@media (min-width: 320px) and (max-width: 640px) {
+    #cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        grid-template-areas:
+            "title"
+            "image"
+            "desc"
+            "addr"
+            "btn";
+    }
+
+    .card figure img {
+        width: 100%; 
+    }
+}
+
+@media (min-width: 641px) and (hover: hover) {
+    .card figure img:hover {
+        transform: scale(1.04); 
+        filter: brightness(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25); 
+        cursor: pointer;
+    }
+}
+
+.visit-info {
+    background-color: #f2f2f2;
+    border: 1px solid #dcdcdc;
+    font-size: 1.5rem;
+    color: #4a1f2b;
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    padding: 0.85rem 1.25rem;
+    margin: 1rem auto 2rem auto;
+    max-width: 1200px;
+    
+}
