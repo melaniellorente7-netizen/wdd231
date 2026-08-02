@@ -26,9 +26,6 @@ function displayPlaces(placesList) {
 
     cards.appendChild(card);
     
-
-   
-
   });
 
 }
