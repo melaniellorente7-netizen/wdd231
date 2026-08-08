@@ -54,6 +54,12 @@ main {
 
 }
 
+h1 {
+    font-family: "Geomini",sans-serif;
+    justify-self: center;
+    color: var(--accent-color);
+}
+
 /***HAMBURGUER**/
 
 .hamburger {
@@ -200,14 +206,6 @@ main {
     border-color: var(--primary-color);
 }
 
-
-.card-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 15px;
-}
-
 .save-star-btn {
     background-color: #f0f0f0;
     color: #1a1a1a;
@@ -254,11 +252,13 @@ main {
 }
 
 .card-header {
-    padding: 12px;
     text-align: center;
     border-bottom: 1px solid var(--secondary-border);
     background-color: rgba(0, 0, 0, 0.02);
-    /* Fondo sutil para la cabecera */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
 }
 
 .card-header h2 {
