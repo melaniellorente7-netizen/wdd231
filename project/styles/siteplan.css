@@ -1,16 +1,12 @@
 :root {
-  /* Primario: Azul Océano Profundo */
+
   --primary-color: #0F4C81;
-  --primary-text: #FFFFFF;       /* Contraste: 8.5:1 (Pasa AAA) */
-
-  /* Secundario: Arena / Fondo Cálido Neutro */
+  --primary-text: #FFFFFF;       
   --secondary-bg: #F4F1EA;
-  --secondary-text: #1C2833;     /* Contraste: 14.1:1 (Pasa AAA) */
+  --secondary-text: #1C2833;    
   --secondary-border: #B0A8A0;
-
-  /* Acento: Terracota / Naranja Aventura */
   --accent-color: #C04A21;
-  --accent-text: #FFFFFF;        /* Contraste: 4.8:1 (Pasa AA para texto normal, AAA para grande) */
+  --accent-text: #FFFFFF;        
 }
 body {
     font-family:"Geomini", sans-serif;
