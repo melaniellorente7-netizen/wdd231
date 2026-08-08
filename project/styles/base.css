@@ -1,12 +1,14 @@
 :root {
 
-  --primary-color: #0F4C81;
-  --primary-text: #FFFFFF;       
-  --secondary-bg: #F4F1EA;
-  --secondary-text: #1C2833;    
-  --secondary-border: #B0A8A0;
-  --accent-color: #C04A21;
-  --accent-text: #FFFFFF;        
+    --primary-color: #0F4C81;
+    --primary-text: #FFFFFF;
+    --secondary-bg: #F4F1EA;
+    --secondary-text: #1C2833;
+    --secondary-border: #B0A8A0;
+    --accent-color: #a22d07;
+    --accent-text: #FFFFFF;
+    --bg-color: #f6f4f4;
+
 }
 
 /*Header*/
@@ -22,6 +24,7 @@ header {
     color: var(--primary-text);
     font-family: "Geomini", sans-serif;
     font-style: normal;
+
 }
 
 header img {
@@ -36,6 +39,19 @@ header img {
 header span {
     font-size: 1.5rem;
     color: var(--primary-text);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+    background-color: var(--bg-color);
+
 }
 
 /***HAMBURGUER**/
@@ -90,7 +106,7 @@ header span {
 
 .navigation li.current {
     background-color: var(--accent-color);
-    font-weight: 600;
+    font-weight: 800;
 }
 
 .navigation a:hover {
@@ -118,12 +134,10 @@ header span {
 }
 
 .contact-btn {
-    position: absolute;
-    bottom: 25px; 
-    left: 50%;
-    transform: translateX(-50%); 
-    width: max-content;
-    display: inline-block;
+    position: static;
+    align-self: center;
+    transform: none;
+    margin-top: 10px;
     background-color: #15552c;
     color: var(--accent-text);
     border: 2px solid var(--secondary-border);
@@ -139,12 +153,342 @@ header span {
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+
 .contact-btn:hover {
     background-color: #864432;
-    transform: translateX(-50%) scale(1.35); 
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35); 
+    transform: translateX(-50%) scale(1.35);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
 }
 
+/* Filters bar */
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 1rem 1.5rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    align-items: center;
+    font-family: "Geomini", sans-serif;
+}
+
+.filter-container input,
+.filter-container select,
+.filter-btn {
+    padding: 10px 14px;
+    border: 1px solid var(--secondary-border);
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    background-color: #fff;
+}
+
+.filter-container input {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-btn {
+    cursor: pointer;
+    background-color: var(--secondary-bg);
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.filter-btn.active {
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    border-color: var(--primary-color);
+}
+
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+}
+
+.save-star-btn {
+    background-color: #f0f0f0;
+    color: #1a1a1a;
+    border: 1px solid #333333;
+    padding: 2px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.save-star-btn.saved {
+    color: #f1c40f;
+}
+
+.save-star-btn:hover {
+    transform: scale(1.2);
+}
+
+/*Countries GRID*/
+
+.countries-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    padding: 1.5rem;
+    background-color: var(--bg-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.country-card {
+    background-color: var(--secondary-bg);
+    border: 1px solid var(--secondary-border);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.country-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--secondary-border);
+    background-color: rgba(0, 0, 0, 0.02);
+    /* Fondo sutil para la cabecera */
+}
+
+.card-header h2 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: "Geomini", sans-serif;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 12px;
+    height: 100%;
+    justify-content: space-between;
+    font-family: "Geomini", sans-serif;
+}
+
+.card-body img.country-flag {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.country-info {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: left;
+}
+
+.country-info p {
+    margin: 0;
+    font-size: 0.88rem;
+    color: var(--secondary-text);
+}
+
+.country-info strong {
+    color: #000;
+}
+
+.btn-more-info {
+    margin-top: 10px;
+    padding: 9px 16px;
+    background-color: var(--primary-color);
+    color: var(--primary-text);
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-more-info:hover {
+    background-color: var(--accent-color);
+}
+
+/* Dialog of More Info */
+
+.country-modal {
+    border: none;
+    border-radius: 12px;
+    padding: 0;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    background-color: var(--secondary-bg, #ffffff);
+    font-family: "Geomini", sans-serif;
+}
+
+.country-modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--secondary-text, #555);
+}
+
+.close-btn:hover {
+    color: #000;
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    color: var(--primary-color, #a83d1d);
+    border-bottom: 2px solid var(--secondary-border, #eee);
+    padding-bottom: 8px;
+    padding-right: 25px;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.modal-body h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.1rem;
+    color: var(--primary-color, #a83d1d);
+}
+
+.tip-item {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.tip-item strong {
+    display: block;
+    color: #000;
+    margin-bottom: 2px;
+}
+
+.tip-item p {
+    margin: 0;
+    color: var(--secondary-text, #444);
+}
+/*Contact us FORM*/
+
+.contact-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-family: "Geomini", sans-serif;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info h1 {
+    color: var(--primary-color, #a83d1d);
+    margin-bottom: 0.5rem;
+}
+
+.contact-form fieldset {
+    border: 1px solid var(--secondary-border, #ccc);
+    border-radius: 10px;
+    padding: 1.5rem;
+    background-color: var(--secondary-bg, #fdfdfd);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form legend {
+    font-weight: bold;
+    padding: 0 0.5rem;
+    color: var(--primary-color, #a83d1d);
+}
+
+.contact-form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin-bottom: -0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--primary-color, #a83d1d);
+    box-shadow: 0 0 5px rgba(168, 61, 29, 0.3);
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0.5rem;
+}
+
+.checkbox-container input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.checkbox-container label {
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background-color: var(--primary-color, #a83d1d);
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+}
+
+.submit-btn:hover {
+    background-color: #832e15;
+}
 
 /*Footer*/
 footer {

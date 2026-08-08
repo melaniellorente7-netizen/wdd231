@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Melanie Llorente">
+    <meta name="description" content="Online guide with tips of a variety of destinations for travelers">
+    <title>Traveler's Guide</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo-header.png" alt="Traveler's Guide Earth Logo" width="512" height="512">
+        <span>Traveler's Guide</span>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
+            aria-controls="nav-bar"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="guides.html">Guides</a></li>
+                <li class="current"><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <div class="contact-container">
+            <section class="contact-info">
+                <h1>Get in Touch</h1>
+                <p>Have questions about a destination, want to suggest a new country guide, or need assistance? Send us
+                    a message!</p>
+            </section>
+
+            <form action="thanks.html" method="get" class="contact-form">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <label for="fname">First Name *</label>
+                    <input type="text" id="fname" name="fname" required placeholder="John">
+
+                    <label for="lname">Last Name *</label>
+                    <input type="text" id="lname" name="lname" required placeholder="Doe">
+
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+
+                    <label for="subject">Reason for Inquiry *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a topic...</option>
+                        <option value="help">General Help & Support</option>
+                        <option value="recommendation">Suggest a New Destination / Country</option>
+                        <option value="feedback">Website Feedback / Issue Report</option>
+                        <option value="business">Business / Partnership Inquiry</option>
+                    </select>
+
+                    <label for="country">Country of Interest (Optional)</label>
+                    <input type="text" id="country" name="country" placeholder="e.g., Japan, Italy...">
+
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required
+                        placeholder="Write your query or feedback here..."></textarea>
+
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                        <label for="newsletter">Subscribe to our monthly Travel Tips newsletter</label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> Melanie Llorente - Final WDD 231 Project</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

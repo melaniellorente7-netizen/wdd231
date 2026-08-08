@@ -5,41 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Melanie Llorente">
     <meta name="description" content="Online guide with tips of a variety of destinations for travelers">
-    <title>Traveler's Guide</title>
+    <title>Thank You - Traveler's Guide</title>
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@200..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geomini:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 </head>
 <body>
     <header>
         <img src="images/logo-header.png" alt="Traveler's Guide Earth Logo" width="512" height="512">
         <span>Traveler's Guide</span>
-        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"
-            aria-controls="nav-bar"></button>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle navigation menu"></button>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="guides.html">Guides</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li class="current"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="hero-container">
-            <img class="banner" src="images/banner-travelers-guide.svg" alt="Travelers web page banner image" class="banner">
-            <a href="contact.html" class="contact-btn">GET INFO</a>
+
+    <main class="contact-container" style="padding: 2rem 1rem;">
+        <h1 style="text-align: center;">Thank You for Reaching Out!</h1>
+        <p style="text-align: center;">We have received your message with the following details:</p>
+        
+        <!-- Contenedor donde JS inyectará los datos enviados -->
+        <div id="results" class="results-card" style="margin: 1.5rem auto; padding: 1.5rem; border: 1px solid #ccc; border-radius: 8px; max-width: 500px; background-color: #fdfdfd;"></div>
+
+        <div style="text-align: center;">
+            <a href="index.html" class="submit-btn" style="display: inline-block; text-decoration: none; margin-top: 1rem;">Return to Home</a>
         </div>
-        <div id="countries-grid" class="countries-grid"></div>
     </main>
+
     <footer>
         <p>©<span id="currentyear"></span> Melanie Llorente - Final WDD 231 Project</p>
         <p id="lastModified"></p>
     </footer>
-    <script type="module" src="scripts/home.js"></script>
 </body>
 </html>

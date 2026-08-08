@@ -6,4 +6,3 @@ currentYear.textContent = today.getFullYear();
 
 lastModified.textContent = `Last Modified: ${document.lastModified}`;
 
-document.querySelector("#timestamp").value = today.toISOString();

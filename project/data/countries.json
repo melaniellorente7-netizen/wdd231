@@ -1,0 +1,304 @@
+{
+  "countries": [
+    {
+      "id": "jpn",
+      "country": "Japan",
+      "region": "Asia",
+      "language": "Japanese",
+      "currency": "Yen (JPY)",
+      "image": "https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Tokyo",
+      "weatherCity": "Tokyo",
+      "travelTips": {
+        "bestSeason": "Spring (March - May) to see the cherry blossoms in bloom.",
+        "travelStyle": "Ideal for solo travelers or couples due to high safety.",
+        "culturalTip": "Always carry cash and respect silence rules on public transit."
+      }
+    },
+    {
+      "id": "fra",
+      "country": "France",
+      "region": "Europe",
+      "language": "French",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Paris",
+      "weatherCity": "Paris",
+      "travelTips": {
+        "bestSeason": "Autumn (September - November) with fewer crowds.",
+        "travelStyle": "Great for couples and cultural exploration.",
+        "culturalTip": "Always greet staff with a 'Bonjour' when entering local shops."
+      }
+    },
+    {
+      "id": "ita",
+      "country": "Italy",
+      "region": "Europe",
+      "language": "Italian",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Rome",
+      "weatherCity": "Rome",
+      "travelTips": {
+        "bestSeason": "Spring (April - June) before the summer heat.",
+        "travelStyle": "Perfect for group trips or traveling with friends.",
+        "culturalTip": "Book tickets for popular museums months in advance."
+      }
+    },
+    {
+      "id": "mex",
+      "country": "Mexico",
+      "region": "Americas",
+      "language": "Spanish",
+      "currency": "Mexican Peso (MXN)",
+      "image": "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Mexico City",
+      "weatherCity": "Mexico City",
+      "travelTips": {
+        "bestSeason": "November to April (dry season).",
+        "travelStyle": "Ideal for both group and solo travel.",
+        "culturalTip": "Try street food from stalls recommended by local guides."
+      }
+    },
+    {
+      "id": "esp",
+      "country": "Spain",
+      "region": "Europe",
+      "language": "Spanish",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1543783207-ec64e4d95325?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Madrid",
+      "weatherCity": "Madrid",
+      "travelTips": {
+        "bestSeason": "May, June, and September.",
+        "travelStyle": "Great for solo trips or small groups.",
+        "culturalTip": "Lunch and dinner times are much later than in other countries."
+      }
+    },
+    {
+      "id": "egy",
+      "country": "Egypt",
+      "region": "Africa",
+      "language": "Arabic",
+      "currency": "Egyptian Pound (EGP)",
+      "image": "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Cairo",
+      "weatherCity": "Cairo",
+      "travelTips": {
+        "bestSeason": "October to April to avoid extreme heat.",
+        "travelStyle": "Recommended to travel with guided tours or groups.",
+        "culturalTip": "Dress modestly when visiting historic sites and temples."
+      }
+    },
+    {
+      "id": "aus",
+      "country": "Australia",
+      "region": "Oceania",
+      "language": "English",
+      "currency": "Australian Dollar (AUD)",
+      "image": "https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Canberra",
+      "weatherCity": "Sydney",
+      "travelTips": {
+        "bestSeason": "December to February (Southern summer).",
+        "travelStyle": "Excellent for backpackers and solo travelers.",
+        "culturalTip": "Keep vast driving distances in mind when planning road trips."
+      }
+    },
+    {
+      "id": "bra",
+      "country": "Brazil",
+      "region": "Americas",
+      "language": "Portuguese",
+      "currency": "Brazilian Real (BRL)",
+      "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Brasilia",
+      "weatherCity": "Rio de Janeiro",
+      "travelTips": {
+        "bestSeason": "December to March (beach and carnival season).",
+        "travelStyle": "Fun and energetic for group travel.",
+        "culturalTip": "Learn basic Portuguese phrases to interact with locals."
+      }
+    },
+    {
+      "id": "can",
+      "country": "Canada",
+      "region": "Americas",
+      "language": "English / French",
+      "currency": "Canadian Dollar (CAD)",
+      "image": "https://images.unsplash.com/photo-1503614472-8c93d56e92ce?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Ottawa",
+      "weatherCity": "Toronto",
+      "travelTips": {
+        "bestSeason": "September to October for autumn foliage.",
+        "travelStyle": "Perfect for family trips and nature enthusiasts.",
+        "culturalTip": "Pack high-quality thermal clothing if visiting during winter."
+      }
+    },
+    {
+      "id": "grc",
+      "country": "Greece",
+      "region": "Europe",
+      "language": "Greek",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1533105079780-92b9be482077?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Athens",
+      "weatherCity": "Athens",
+      "travelTips": {
+        "bestSeason": "May to June to enjoy islands with fewer crowds.",
+        "travelStyle": "Ideal for couples or small groups of friends.",
+        "culturalTip": "Use island ferries for flexible travel between destinations."
+      }
+    },
+    {
+      "id": "tha",
+      "country": "Thailand",
+      "region": "Asia",
+      "language": "Thai",
+      "currency": "Thai Baht (THB)",
+      "image": "https://images.unsplash.com/photo-1528181304800-259b08848526?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Bangkok",
+      "weatherCity": "Bangkok",
+      "travelTips": {
+        "bestSeason": "November to February (cool and dry weather).",
+        "travelStyle": "A top destination for backpackers and solo adventurers.",
+        "culturalTip": "Cover shoulders and knees before entering Buddhist temples."
+      }
+    },
+    {
+      "id": "per",
+      "country": "Peru",
+      "region": "Americas",
+      "language": "Spanish",
+      "currency": "Sol (PEN)",
+      "image": "https://images.unsplash.com/photo-1526392060635-9d6019884377?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Lima",
+      "weatherCity": "Cusco",
+      "travelTips": {
+        "bestSeason": "May to September (dry season in the Andes).",
+        "travelStyle": "Great for trekking groups and outdoor enthusiasts.",
+        "culturalTip": "Acclimate in Cusco for a couple of days before high-altitude hikes."
+      }
+    },
+    {
+      "id": "deu",
+      "country": "Germany",
+      "region": "Europe",
+      "language": "German",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Berlin",
+      "weatherCity": "Berlin",
+      "travelTips": {
+        "bestSeason": "May to September, or December for Christmas markets.",
+        "travelStyle": "Ideal for solo travelers and history buffs.",
+        "culturalTip": "Strictly follow traffic rules and stay clear of bike lanes."
+      }
+    },
+    {
+      "id": "zaf",
+      "country": "South Africa",
+      "region": "Africa",
+      "language": "11 Official Languages",
+      "currency": "Rand (ZAR)",
+      "image": "https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Pretoria",
+      "weatherCity": "Cape Town",
+      "travelTips": {
+        "bestSeason": "May to September for wildlife safaris.",
+        "travelStyle": "Recommended for group or family road trips.",
+        "culturalTip": "Rent a GPS-enabled car for easy travel between parks."
+      }
+    },
+    {
+      "id": "nld",
+      "country": "Netherlands",
+      "region": "Europe",
+      "language": "Dutch",
+      "currency": "Euro (EUR)",
+      "image": "https://images.unsplash.com/photo-1512470876302-972faa2aa9a4?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Amsterdam",
+      "weatherCity": "Amsterdam",
+      "travelTips": {
+        "bestSeason": "April to May to see tulip fields in bloom.",
+        "travelStyle": "Very convenient for solo travelers and short trips.",
+        "culturalTip": "Rent a bicycle to get around like a local."
+      }
+    },
+    {
+      "id": "isl",
+      "country": "Iceland",
+      "region": "Europe",
+      "language": "Icelandic",
+      "currency": "Icelandic Króna (ISK)",
+      "image": "https://images.unsplash.com/photo-1504893524553-b855bce32c67?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Reykjavik",
+      "weatherCity": "Reykjavik",
+      "travelTips": {
+        "bestSeason": "September to March for Northern Lights viewing.",
+        "travelStyle": "Awesome for a road trip with a group of friends.",
+        "culturalTip": "Book geothermal hot springs like the Blue Lagoon early."
+      }
+    },
+    {
+      "id": "mar",
+      "country": "Morocco",
+      "region": "Africa",
+      "language": "Arabic / Berber",
+      "currency": "Moroccan Dirham (MAD)",
+      "image": "https://images.unsplash.com/photo-1489749798305-4fea3ae63d43?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Rabat",
+      "weatherCity": "Marrakech",
+      "travelTips": {
+        "bestSeason": "March to May or September to November.",
+        "travelStyle": "Best enjoyed with partners or small tour groups.",
+        "culturalTip": "Bargaining is expected and part of the shopping culture in souks."
+      }
+    },
+    {
+      "id": "kor",
+      "country": "South Korea",
+      "region": "Asia",
+      "language": "Korean",
+      "currency": "South Korean Won (KRW)",
+      "image": "https://images.unsplash.com/photo-1538485399081-7191377e8241?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Seoul",
+      "weatherCity": "Seoul",
+      "travelTips": {
+        "bestSeason": "Autumn (September - November) for foliage and mild weather.",
+        "travelStyle": "Extremely safe for first-time solo travelers.",
+        "culturalTip": "Download local map apps like Naver Map as Google Maps has limited features."
+      }
+    },
+    {
+      "id": "nzl",
+      "country": "New Zealand",
+      "region": "Oceania",
+      "language": "English / Māori",
+      "currency": "New Zealand Dollar (NZD)",
+      "image": "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Wellington",
+      "weatherCity": "Auckland",
+      "travelTips": {
+        "bestSeason": "December to February for outdoor activities.",
+        "travelStyle": "Highly recommended for campervan trips with friends or partners.",
+        "culturalTip": "Follow environmental conservation rules strictly when camping."
+      }
+    },
+    {
+      "id": "che",
+      "country": "Switzerland",
+      "region": "Europe",
+      "language": "German / French / Italian",
+      "currency": "Swiss Franc (CHF)",
+      "image": "https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?q=75&w=400&fm=webp&auto=format&fit=crop",
+      "capital": "Bern",
+      "weatherCity": "Zurich",
+      "travelTips": {
+        "bestSeason": "January to March for skiing or July to August for hiking.",
+        "travelStyle": "Great for solo travelers and couples.",
+        "culturalTip": "Get a Swiss Travel Pass to save on train travel across the country."
+      }
+    }
+  ]
+}
